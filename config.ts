@@ -13,4 +13,5 @@ export default defineUserConfig({
                 str.replace(/^@root/, path.resolve(__dirname, '.')),
         },
     },
+    base: '/Blog-of-Kifary/'
 });
