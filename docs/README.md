@@ -81,3 +81,4 @@ const onePlusTwoPlusThree = {{ 1 + 2 + 3 }}
 ## 静态资源
 ![VuePress Logo](/images/hero.png)
 <img :src="$withBase('/images/hero.png')" alt="VuePress Logo">
+<img :src="$withBase('/images/hero.png')" alt="VuePress Logo">
