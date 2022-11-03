@@ -3,18 +3,18 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://swiftbman.github.io",
 
   author: {
     name: "Mr.Hope",
-    url: "https://mrhope.site",
+    url: "https://swiftbman.github.io",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "SwiftBMan/vuepress-kifary-blog",
 
   docsDir: "docs",
 
