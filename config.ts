@@ -13,5 +13,5 @@ export default defineUserConfig({
                 str.replace(/^@root/, path.resolve(__dirname, '.')),
         },
     },
-    //base: '/blog-of-kifary/'
+    base: '/vuepress-kifary-blog/'
 });
