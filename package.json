@@ -1,0 +1,30 @@
+{
+  "name": "vuepress-kifary-blog",
+  "version": "1.0.0",
+  "description": "Blog of Kifary",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs --config config.ts",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwiftBMan/vuepress-kifary-blog.git"
+  },
+  "keywords": [
+    "Blog",
+    "Kifary",
+    "iOS",
+    "IT",
+    "study"
+  ],
+  "author": "ZhengQihui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwiftBMan/vuepress-kifary-blog/issues"
+  },
+  "homepage": "https://github.com/SwiftBMan/vuepress-kifary-blog#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.53"
+  }
+}
