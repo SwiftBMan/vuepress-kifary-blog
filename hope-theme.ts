@@ -98,11 +98,13 @@ export default hopeTheme({
             echarts: true,
             flowchart: true,
             gfm: true,
-            imageLazyload: true,
-            imageTitle: true,
-            imageSize: true,
+            imageLazyload: true, // 启用图片懒加载
+            imageTitle: true, // 启用图片标题
+            imageSize: true, // 启用图片大小
+            imageMark: true, // 启用图片标记
             include: true,
             katex: true,
+            mathjax: false,
             mark: true,
             mermaid: true,
             playground: {
@@ -133,6 +135,12 @@ export default hopeTheme({
         
     },
 
+    darkmode: "switch", //https://vuepress-theme-hope.github.io/v2/zh/guide/interface/darkmode.html
 
-
+    themeColor: {
+        blue: "#2196f3",
+        red: "#f26d6d",
+        green: "#3eaf7c",
+        orange: "#fb9b5f",
+    }
 });
