@@ -19,7 +19,7 @@ tag:
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
-star: true
+star: 1
 # You can customize footer content
 footer: Footer content for test
 # You can customize copyright content

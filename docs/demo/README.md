@@ -15,3 +15,5 @@ category:
 - [Function Disable](disable.md)
 
 - [Encryption Demo](encrypt.md)
+
+- [Demo](demo.md)
