@@ -94,7 +94,7 @@ export default hopeTheme({
     plugins: {
         // 图片预览
         photoSwipe: {
-            delay: 5000
+            delay: 500
         },
         copyCode: {
             showInMobile: true,

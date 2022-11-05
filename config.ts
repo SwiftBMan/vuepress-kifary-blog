@@ -3,6 +3,7 @@ import hopeTheme from './hope-theme';
 import { searchPlugin } from "@vuepress/plugin-search";
 import { photoSwipePlugin } from "vuepress-plugin-photo-swipe";
 
+
 export default defineUserConfig({
     base: "/vuepress-kifary-blog/",
 
@@ -19,12 +20,7 @@ export default defineUserConfig({
     shouldPrefetch: false,
 
     plugins: [
-        // photoSwipePlugin({
-        //     delay: 5000,
-        //     options: {
-
-        //     }
-        // }),
+        
         searchPlugin({
             maxSuggestions: undefined,
             // getExtraFields: (dd) => {

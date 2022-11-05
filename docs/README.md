@@ -15,7 +15,7 @@ bgImageStyle: {
 #   # max-width: 100%,
 #   # max-height: 100%,
 #height: "600px",
-  width: 100%,
+  #width: 100%,
   
 #    max-width: 100%,
 #    background-color: black,

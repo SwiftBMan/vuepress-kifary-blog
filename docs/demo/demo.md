@@ -16,18 +16,42 @@ isOriginal: true
 
 # 学习博客框架
 
-
-
-
-
-
 ## 自定义容器
 
 
+<div class="image-preview">
+<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
+<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
+<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
+</div>
 
-<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
-<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
-<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
+<style>
+  .image-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-preview > img {
+     box-sizing: border-box;
+     width: 33.3% !important;
+     padding: 9px;
+     border-radius: 16px;
+  }
+
+  @media (max-width: 719px){
+    .image-preview > img {
+      width: 50% !important;
+    }
+  }
+
+  @media (max-width: 419px){
+    .image-preview > img {
+      width: 100% !important;
+    }
+  }
+</style>
 
 ::: danger 自定义标题
 
