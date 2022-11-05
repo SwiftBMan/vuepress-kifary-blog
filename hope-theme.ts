@@ -170,9 +170,9 @@ export default hopeTheme({
              */
             provider: "Giscus",
             repo: "SwiftBMan/vuepress-kifary-blog",
-            repoId: "R_kgDOG_Pt2A",
+            repoId: "R_kgDOIXK7Lg",
             category: "Announcements",
-            categoryId: "DIC_kwDOG_Pt2M4COD69",
+            categoryId: "DIC_kwDOIXK7Ls4CSYhe",
 
             /**
              * Using Twikoo
