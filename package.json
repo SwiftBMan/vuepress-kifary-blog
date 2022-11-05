@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs --config config.ts",
+    "docs:clean-dev": "vuepress dev docs --config config.ts --clean-cache",
     "docs:build": "vuepress build docs --config config.ts"
   },
   "repository": {
@@ -25,7 +26,9 @@
   },
   "homepage": "https://github.com/SwiftBMan/vuepress-kifary-blog#readme",
   "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.53",
     "vuepress": "^2.0.0-beta.53",
+    "vuepress-plugin-photo-swipe": "^2.0.0-beta.119",
     "vuepress-theme-hope": "^2.0.0-beta.119"
   }
 }

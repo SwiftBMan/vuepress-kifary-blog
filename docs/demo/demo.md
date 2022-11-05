@@ -9,13 +9,24 @@ tag:
     - study
 date: 2022-11-04
 timeline: true
+icon: study
+#sidebar: heading
 ---
 
 # 学习博客框架
 
+
+
+
+
+
 ## 自定义容器
 
-# ss
+
+
+<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
+<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
+<img src="https://vuepress-theme-hope.github.io/v2/assets/image/1.jpg">
 
 ::: danger 自定义标题
 
@@ -851,3 +862,239 @@ $$
 @slideend
 
 https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/presentation.html#演示
+
+## ECharts
+::: echarts 一个折线图案例
+
+```json
+{
+  "xAxis": {
+    "type": "category",
+    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  "yAxis": {
+    "type": "value"
+  },
+  "series": [
+    {
+      "data": [150, 230, 224, 218, 135, 147, 260],
+      "type": "line"
+    }
+  ]
+}
+```
+
+:::
+
+::: echarts 一个柱状图案例
+
+```json
+{
+  "xAxis": {
+    "type": "category",
+    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  "yAxis": {
+    "type": "value"
+  },
+  "series": [
+    {
+      "data": [120, 200, 150, 80, 70, 110, 130],
+      "type": "bar",
+      "showBackground": true,
+      "backgroundStyle": {
+        "color": "rgba(180, 180, 180, 0.2)"
+      }
+    }
+  ]
+}
+```
+
+:::
+
+::: echarts 一个基础南丁格尔玫瑰图案例
+
+```json
+{
+  "legend": {
+    "top": "bottom"
+  },
+  "toolbox": {
+    "show": true,
+    "feature": {
+      "mark": {
+        "show": true
+      },
+      "dataView": {
+        "show": true,
+        "readOnly": false
+      },
+      "restore": {
+        "show": true
+      },
+      "saveAsImage": {
+        "show": true
+      }
+    }
+  },
+  "series": [
+    {
+      "name": "Nightingale Chart",
+      "type": "pie",
+      "radius": [20, 100],
+      "center": ["50%", "50%"],
+      "roseType": "area",
+      "itemStyle": {
+        "borderRadius": 8
+      },
+      "data": [
+        {
+          "value": 40,
+          "name": "rose 1"
+        },
+        {
+          "value": 38,
+          "name": "rose 2"
+        },
+        {
+          "value": 32,
+          "name": "rose 3"
+        },
+        {
+          "value": 30,
+          "name": "rose 4"
+        },
+        {
+          "value": 28,
+          "name": "rose 5"
+        },
+        {
+          "value": 26,
+          "name": "rose 6"
+        },
+        {
+          "value": 22,
+          "name": "rose 7"
+        },
+        {
+          "value": 18,
+          "name": "rose 8"
+        }
+      ]
+    }
+  ]
+}
+```
+
+:::
+
+::: echarts 一个散点图案例
+
+```json
+{
+  "xAxis": {},
+  "yAxis": {},
+  "series": [
+    {
+      "symbolSize": 20,
+      "data": [
+        [10.0, 8.04],
+        [8.07, 6.95],
+        [13.0, 7.58],
+        [9.05, 8.81],
+        [11.0, 8.33],
+        [14.0, 7.66],
+        [13.4, 6.81],
+        [10.0, 6.33],
+        [14.0, 8.96],
+        [12.5, 6.82],
+        [9.15, 7.2],
+        [11.5, 7.2],
+        [3.03, 4.23],
+        [12.2, 7.83],
+        [2.02, 4.47],
+        [1.05, 3.33],
+        [4.05, 4.96],
+        [6.03, 7.24],
+        [12.0, 6.26],
+        [12.0, 8.84],
+        [7.08, 5.82],
+        [5.02, 5.68]
+      ],
+      "type": "scatter"
+    }
+  ]
+}
+```
+
+:::
+https://echarts.apache.org/handbook/zh/get-started/
+
+
+Badge Test <Badge text="Building" type="warning" /> <Badge text="MrHope" color="grey" vertical="middle" />
+
+```
+<BiliBili bvid="BV1kt411o7C3" />
+
+<BiliBili bvid="BV1kt411o7C3" :ratio="9/16" :time="60" :page="2" />
+
+<BiliBili bvid="BV1kt411o7C3" :high-quality="false" :danmaku="false" />
+```
+
+<CodePen
+  user="kowlor"
+  slug-hash="ZYYQoy"
+  title="Solar System animation - Pure CSS"
+  :default-tab="['css','result']"
+  :theme="$isDarkMode? 'dark': 'light'"
+/>
+
+
+- 主页图标: <FontIcon icon="home" />
+
+- 一个大红 Markdown 图标: <FontIcon icon="markdown" color="red" :size="32" />
+
+<StackBlitz id="vuepress-theme-hope" />
+
+<StackBlitz id="vuepress-theme-hope" hideExplorer hideNavigation hidedevtools />
+
+## 脚注
+
+脚注 1 链接[^first].
+
+脚注 2 链接[^second].
+
+行内的脚注^[Text of inline footnote] 定义.
+
+重复的页脚定义[^second].
+
+[^first]: 脚注 **可以包含特殊标记**
+
+    也可以由多个段落组成
+
+[^second]: 脚注文字。
+
+## 其他
+https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/others.html#链接检查
+
+
+![Version](https://img.shields.io/npm/v/vuepress-theme-hope/next.svg?style=flat-square&logo=npm)
+![Downloads](https://img.shields.io/npm/dm/vuepress-theme-hope.svg?style=flat-square&logo=npm)
+![Size](https://img.shields.io/bundlephobia/min/vuepress-theme-hope?style=flat-square&logo=npm)
+![Dependencies](https://img.shields.io/librariesio/release/npm/vuepress-theme-hope?style=flat-square)
+
+ 
+ ![Theme: vuepress-theme-hope](https://img.shields.io/badge/主题-vuepress--theme--hope-green.svg?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMDAiIGNsYXNzPSJpY29uIiB2aWV3Qm94PSIwIDAgMzI4MC45NDQgMjgwMCI+CiAgPHBhdGggZD0iTTE2NDUuMzMyIDYwMS4wMDRoMzc1LjY3NUwxMDgxLjgyIDIyMzguNDc4IDE0Mi42MzYgNjAxLjAwNGg3MTguNDc3bDIyMC43MDggMzc5LjcwNCAyMTYuMDEzLTM3OS43MDR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik0xNDIuNjM2IDYwMS4wMDRsOTM5LjE4NSAxNjM3LjQ3NCA5MzkuMTg2LTE2MzcuNDc0aC0zNzUuNjc1bC01NjMuNTEgOTgyLjQ4NC01NjguMjA4LTk4Mi40ODR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik01MTMuMTg4IDYwMS4wMDRsNTY4LjIwNyA5ODcuMjMgNTYzLjUxMS05ODcuMjNoLTM0Ny40OThsLTIxNi4wMTMgMzc5LjcwNC0yMjAuNzA4LTM3OS43MDR6TTE2MDcuNzkyIDEzMTEuODNsNTk0LjY3OCAyLjI5MyAxODcuMzUzLTMxNi4zMjUtNTk4LjY2MiAyLjI5MnpNMjE5OC41MDYgMTkwOS41N0MyODY3LjQzNiA3MzIuNyAyOTM5LjUwMiA2MDUuNDI2IDI5MzcuODc0IDYwMy43OGMtLjcxNS0uNzIzIDQ1LjMwMy0xLjMxNCAxMDIuMjYyLTEuMzE0czEwMy41NjIuNDI4IDEwMy41NjIuOTUxYzAgLjUyMy0yMDguNTcgMzY3Ljk3OC00NjMuNDkxIDgxNi41NjdMMjIxNi43MTUgMjIzNS42bC0xMDIuMS41OTYtMTAyLjEwMi41OTZ6IiBmaWxsPSIjMzU0OTVlIiAvPgogIDxwYXRoIGQ9Ik0xNjgwLjU2MyAyMjMzLjMyOGMwLTEuMzQgMTY4LjIwOC0yOTguMTQ1IDQ0MC4zNzUtNzc3LjA0OGE0MTM1NjQ1Ljc3NSA0MTM1NjQ1Ljc3NSAwIDAwMzM3LjYxOS01OTQuMTlsMTQ2LjEzLTI1Ny4yNSAxNzAuNzQ2LS4wNCAxNzAuNzQ3LS4wNC01LjUzNiA5Ljc0MWMtMy4wNDQgNS4zNTgtNDMuNzI3IDc3LjMwMi05MC40MDcgMTU5Ljg3NS04NS4zNTYgMTUwLjk5Mi0zMzcuNTYyIDU5NS4xNjMtNjU2LjYwMiAxMTU2LjM3M2wtMTcyIDMwMi41NTktMTcwLjUzNi41ODhjLTkzLjc5NS4zMjItMTcwLjUzNi4wNjktMTcwLjUzNi0uNTY3eiIgZmlsbD0iIzQxYjg4MyIgLz4KICA8cGF0aCBkPSJNMTQyOS43ODMgMTYyNS4zNTFsNTk0LjY3OSAyLjI5MiAxODcuMzUzLTMxNi4zMjQtNTk4LjY2MiAyLjI5MnoiIGZpbGw9IiMzNTQ5NWUiIC8+CiAgPHBhdGggZD0iTTE1MjQuMjA3IDE0NjQuOTAzbDYwOC4yODUgNi44NzcgMTczLjc0Ni0zMjAuOTA5aC02MTkuMDcyeiIgZmlsbD0iIzQxYjg4MyIgLz4KPC9zdmc+)
+![Author: Mr.Hope](https://img.shields.io/badge/作者:Mr.Hope-关注-blue.svg?style=social)
+
+## markmap
+
+<iframe
+  :src="$withBase('/markmap/markmap.html')"
+  width="100%"
+  height="400"
+  frameborder="0"
+  scrolling="No"
+  leftmargin="0"
+  topmargin="0"
+/>

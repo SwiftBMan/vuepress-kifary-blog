@@ -1,5 +1,7 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import { copyright, hopeTheme } from "vuepress-theme-hope";
 import { getDirname, path } from "@vuepress/utils";
+import { zhNavbar } from "./docs/.vuepress/navbar/index";
+import { zhSidebar } from "./docs/.vuepress/sidebar/index";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -21,8 +23,13 @@ export default hopeTheme({
     // 导航栏图标
     logo: "/logo.svg",
 
+    // 暗黑模式下的导航栏图标
+    logoDark: "/logo.svg",
+
     // 仓库链接
     repo: "SwiftBMan/vuepress-kifary-blog",
+    repoLabel: "GitHub",
+    repoDisplay: true,
 
     // 文档在仓库中的位置
     docsDir: "docs",
@@ -85,10 +92,26 @@ export default hopeTheme({
     },
 
     plugins: {
+        // 图片预览
+        photoSwipe: {
+            delay: 5000
+        },
+        copyCode: {
+            showInMobile: true,
+            //duration: 0,
+            pure: false,
+        },
+        copyright: {
+            global: true,
+            triggerWords: 1,
+            author: "Kifary",
+            license: "MIT"
+        },
         blog: {
             autoExcerpt: false,
         },
         mdEnhance: {
+            footnote: true,
             align: true,
             attrs: true,
             chart: true,
@@ -133,6 +156,38 @@ export default hopeTheme({
             vuePlayground: true,
         },
         
+        components: [
+            "BiliBili",
+            "Badge",
+            "CodePen",
+            "PDF",
+            "StackBlitz"
+        ],
+
+        comment: {
+            /**
+             * Using Giscus
+             */
+            provider: "Giscus",
+            repo: "SwiftBMan/vuepress-kifary-blog",
+            repoId: "R_kgDOG_Pt2A",
+            category: "Announcements",
+            categoryId: "DIC_kwDOG_Pt2M4COD69",
+
+            /**
+             * Using Twikoo
+             */
+            // provider: "Twikoo",
+            // envId: "https://twikoo.ccknbc.vercel.app",
+
+            /**
+             * Using Waline
+             */
+            // provider: "Waline",
+            // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+        },
+
+        
     },
 
     darkmode: "switch", //https://vuepress-theme-hope.github.io/v2/zh/guide/interface/darkmode.html
@@ -142,5 +197,51 @@ export default hopeTheme({
         red: "#f26d6d",
         green: "#3eaf7c",
         orange: "#fb9b5f",
-    }
+    },
+
+    fullscreen: true,
+
+    backToTop: 300,
+
+    pure: false,
+
+    // 导航栏链接
+    navbar: zhNavbar,
+
+    navbarAutoHide: "mobile",
+
+    navbarIcon: true,
+
+    // 导航栏组件布局
+    navbarLayout: {
+        left: ["Brand"],
+        center: ["Links"],
+        right: ["Language", "Repo", "Outlook", "Search"],
+    },
+
+    // 侧边栏
+    //sidebar: zhSidebar,
+    sidebar: "structure",
+
+    sidebarIcon: true,
+
+    sidebarSorter: ["readme", "order", "title"],
+
+    // 路径导航
+    breadcrumb: true,
+    breadcrumbIcon: true,
+
+    displayFooter: true,
+    footer: "undefined",
+    copyright: "MIT Licensed | Copyright © 2022-present Kifary",
+
+    encrypt: {
+        global: false,
+        admin: "1234",
+        config: {
+            "/demo/encrypt.html": ["1234"],
+        },
+    },
+
+    
 });

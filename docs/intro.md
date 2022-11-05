@@ -1,5 +1,6 @@
 ---
 article: false # 是否是文章显示
+#sidebar: heading
 ---
 # 自我介绍
 

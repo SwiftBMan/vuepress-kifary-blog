@@ -4,6 +4,8 @@ layout: Blog # 使用博客布局
 icon: home
 title: 博客首页
 heroImage: /logo.svg
+heroImageDark: /logo.svg
+heroAlt: "logo"
 heroText: Blog of Kifary
 tagline: 学无止境
 heroFullScreen: false 
@@ -12,7 +14,7 @@ bgImage: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2.tapimg.com%2
 bgImageStyle: {
 #   # max-width: 100%,
 #   # max-height: 100%,
-#   # height: "200px",
+#height: "600px",
   width: 100%,
   
 #    max-width: 100%,
@@ -63,6 +65,15 @@ projects:
   #   desc: Detailed description of this custom item
   #   link: https://link.to.your.friend
 
-footer: 自定义你的页脚
+
+
+
+#footer: false
+
+# actions:
+#   - text: 快速上手 💡
+#     link: /zh/guide/
+#     type: primary
+
 ---
 
