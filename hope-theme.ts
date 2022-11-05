@@ -173,6 +173,18 @@ export default hopeTheme({
             repoId: "R_kgDOIXK7Lg",
             category: "Announcements",
             categoryId: "DIC_kwDOIXK7Ls4CSYhe",
+            mapping: "pathname",
+            strict: true,
+            reactionsEnabled: true,
+            
+            inputPosition: "top",
+            lightTheme: "light",
+            darkTheme: "dark",
+            lazyLoading: true,
+
+            author: "Kifary",
+            comment: true,
+            
 
             /**
              * Using Twikoo
